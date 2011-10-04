@@ -1,0 +1,2 @@
+# cat=basic//01; type=int+; label=History count:Count of page to store in a comma-separated list in fe_users table
+HISTORYCOUNT = 5
