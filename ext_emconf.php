@@ -1,9 +1,9 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "pagehits".
+# Extension Manager/Repository config file for ext "pagehits_history".
 #
-# Auto generated 29-03-2011 00:26
+# Auto generated 04-10-2011 13:12
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -41,7 +41,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:7:{s:12:"ext_icon.gif";s:4:"3f54";s:17:"ext_localconf.php";s:4:"2ec3";s:14:"ext_tables.php";s:4:"8ef2";s:14:"ext_tables.sql";s:4:"03e7";s:30:"Classes/class.userPagehits.php";s:4:"9f2b";s:34:"Configuration/TypoScript/setup.txt";s:4:"a8fd";s:14:"doc/manual.sxw";s:4:"5de8";}',
+	'_md5_values_when_last_written' => 'a:6:{s:21:"ext_conf_template.txt";s:4:"6283";s:12:"ext_icon.gif";s:4:"1d2d";s:17:"ext_localconf.php";s:4:"028e";s:14:"ext_tables.php";s:4:"1c0d";s:14:"ext_tables.sql";s:4:"f01e";s:30:"Classes/tx_pagehitsHistory.php";s:4:"d502";}',
 	'suggests' => array(
 	),
 );
