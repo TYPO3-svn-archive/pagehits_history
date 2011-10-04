@@ -81,7 +81,7 @@ class tx_pagehitsHistory {
 			$user['tx_pagehits_history_history'],
 			TRUE
 		);
-		array_splice($userHistory, intval($this->extensionSettings['HISTORYCOUNT']) - 1);
+		array_splice($userHistory, intval($this->extensionSettings['HISTORYCOUNT']));
 		return $userHistory;
 	}
 
@@ -94,10 +94,14 @@ class tx_pagehitsHistory {
 	 * @return void
 	 */
 	protected function setUsersHisotry($userUid, array $usersHistory) {
+		array_splice(
+			$usersHistory,
+			intval($this->extensionSettings['HISTORYCOUNT'])
+		);
+
 		$updateUsersHistory = array(
 			'tx_pagehits_history_history' => implode(',', $usersHistory)
 		);
-
 		$GLOBALS['TYPO3_DB']->exec_UPDATEquery(
 			'fe_users',
 			'uid = ' . $userUid,
